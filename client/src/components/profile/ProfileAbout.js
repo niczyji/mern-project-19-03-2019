@@ -6,7 +6,7 @@ class ProfileAbout extends Component {
   render() {
     const { profile } = this.props;
 
-    // Get First name
+    // Get first name
     const firstName = profile.user.name.trim().split(" ")[0];
 
     // Skill List
@@ -41,5 +41,9 @@ class ProfileAbout extends Component {
     );
   }
 }
+
+ProfileAbout.propTypes = {
+  profile: PropTypes.object.isRequired
+};
 
 export default ProfileAbout;
